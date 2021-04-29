@@ -237,7 +237,6 @@ public class BobsSerialDateTest extends TestCase {
 
     public void testLeapYearCount() throws Exception {
         assertEquals(0, leapYearCount(1900));
-        assertEquals(0, leapYearCount(1900));
         assertEquals(0, leapYearCount(1901));
         assertEquals(0, leapYearCount(1902));
         assertEquals(0, leapYearCount(1903));
@@ -278,9 +277,7 @@ public class BobsSerialDateTest extends TestCase {
         assertEquals(d(31, DECEMBER, 1904), addDays(5 * 365, newYears));
     }
 
-    private static SpreadsheetDate d(int day, int month, int year) {
-        return new SpreadsheetDate(day, month, year);
-    }
+    private static SpreadsheetDate d(int day, int month, int year) { return new SpreadsheetDate(day, month, year); }
 
     // public void testAddMonths() throws Exception {
     //     assertEquals(d(1, FEBRUARY, 1900), addMonths(1, d(1, JANUARY, 1900)));
@@ -328,7 +325,6 @@ public class BobsSerialDateTest extends TestCase {
 //         } catch (IllegalArgumentException e) {
 //         }
 //     }
-
 
 //     public void testGetNearestDay0fWeek() throws Exception {
 //         assertEquals(d(16, APRIL, 2006), getNearestDay0fWeek(SUNDAY, d(16, APRIL, 2006)));
@@ -412,15 +408,10 @@ public class BobsSerialDateTest extends TestCase {
     // }
 
     // public void testWeekInMonthToString() throws Exception {
-
     //     assertEquals("First", weekInMonthToString(FIRST WEEK IN MONTH));
-
     //     assertEquals("Second", weekInMonthToString(SECORD_WEhiN_MONTH));
-
     //     assertEquals("Third", weekInMonthToString(THIRD_WEEK_IN_MONTH));
-
     //     assertEquals("Fourth", weeklnNonthToString) FOURTH_WEEK_ IN_ MONTH));
-
     //     assertEquals("Last", weekInMonthToString(LAST_WEEK_INMONTH));
 
     //     //todo try {
